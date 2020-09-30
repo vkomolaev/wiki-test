@@ -1,0 +1,43 @@
+<!--
+title: Page
+description: 
+published: 1
+date: 2020-09-30T11:55:30.696Z
+tags: 
+editor: ckeditor
+dateCreated: 2020-09-30T11:55:30.696Z
+-->
+
+<h1><span style="font-family:Arial, Helvetica, sans-serif;"><strong>Unpublish page</strong></span></h1>
+<p>&nbsp;</p>
+<pre><code class="language-javascript">    setupMonitors() {
+        if (!this.isApiAvailable()) {
+            return false;
+        }
+
+        window._satellite._monitors = window._satellite._monitors || [];
+
+        window._satellite._monitors.push({
+            ruleTriggered: function (event) {
+                console.log(
+                    'rule triggered',
+                    event.rule
+                );
+            },
+            ruleCompleted: function (event) {
+                console.log(
+                    'rule completed',
+                    event.rule
+                );
+            },
+            ruleConditionFailed: function (event) {
+                console.log(
+                    'rule condition failed',
+                    event.rule,
+                    event.condition
+                );
+            }
+        });
+
+        return true;
+    }</code></pre>
