@@ -1,0 +1,710 @@
+[corebine-web-templates-core](../README.md) › [Globals](../globals.md) › ["src/markups/modules/article/article"](../modules/_src_markups_modules_article_article_.md) › [Article](_src_markups_modules_article_article_.article.md)
+
+# Class: Article
+
+## Hierarchy
+
+* Component
+
+  ↳ **Article**
+
+## Index
+
+### Constructors
+
+* [constructor](_src_markups_modules_article_article_.article.md#constructor)
+
+### Properties
+
+* [articleContainerRef](_src_markups_modules_article_article_.article.md#articlecontainerref)
+* [articleContentRef](_src_markups_modules_article_article_.article.md#articlecontentref)
+* [articleRef](_src_markups_modules_article_article_.article.md#articleref)
+* [articlesData](_src_markups_modules_article_article_.article.md#articlesdata)
+* [context](_src_markups_modules_article_article_.article.md#context)
+* [currentArticleData](_src_markups_modules_article_article_.article.md#currentarticledata)
+* [props](_src_markups_modules_article_article_.article.md#readonly-props)
+* [refs](_src_markups_modules_article_article_.article.md#refs)
+* [rightRailContainerRef](_src_markups_modules_article_article_.article.md#rightrailcontainerref)
+* [state](_src_markups_modules_article_article_.article.md#state)
+* [stateUrl](_src_markups_modules_article_article_.article.md#stateurl)
+* [contextType](_src_markups_modules_article_article_.article.md#static-optional-contexttype)
+
+### Accessors
+
+* [initialArticleProps](_src_markups_modules_article_article_.article.md#initialarticleprops)
+
+### Methods
+
+* [UNSAFE_componentWillMount](_src_markups_modules_article_article_.article.md#optional-unsafe_componentwillmount)
+* [UNSAFE_componentWillReceiveProps](_src_markups_modules_article_article_.article.md#optional-unsafe_componentwillreceiveprops)
+* [UNSAFE_componentWillUpdate](_src_markups_modules_article_article_.article.md#optional-unsafe_componentwillupdate)
+* [componentDidCatch](_src_markups_modules_article_article_.article.md#optional-componentdidcatch)
+* [componentDidMount](_src_markups_modules_article_article_.article.md#componentdidmount)
+* [componentDidUpdate](_src_markups_modules_article_article_.article.md#componentdidupdate)
+* [componentWillMount](_src_markups_modules_article_article_.article.md#optional-componentwillmount)
+* [componentWillReceiveProps](_src_markups_modules_article_article_.article.md#optional-componentwillreceiveprops)
+* [componentWillUnmount](_src_markups_modules_article_article_.article.md#componentwillunmount)
+* [componentWillUpdate](_src_markups_modules_article_article_.article.md#optional-componentwillupdate)
+* [forceUpdate](_src_markups_modules_article_article_.article.md#forceupdate)
+* [getSnapshotBeforeUpdate](_src_markups_modules_article_article_.article.md#optional-getsnapshotbeforeupdate)
+* [onWindowScroll](_src_markups_modules_article_article_.article.md#onwindowscroll)
+* [render](_src_markups_modules_article_article_.article.md#render)
+* [renderArticleBottom](_src_markups_modules_article_article_.article.md#renderarticlebottom)
+* [renderArticleHeadline](_src_markups_modules_article_article_.article.md#renderarticleheadline)
+* [renderArticleRightRail](_src_markups_modules_article_article_.article.md#renderarticlerightrail)
+* [renderArticleTags](_src_markups_modules_article_article_.article.md#renderarticletags)
+* [renderBottom](_src_markups_modules_article_article_.article.md#renderbottom)
+* [renderRightRail](_src_markups_modules_article_article_.article.md#renderrightrail)
+* [setArticlesData](_src_markups_modules_article_article_.article.md#setarticlesdata)
+* [setState](_src_markups_modules_article_article_.article.md#setstate)
+* [shouldComponentUpdate](_src_markups_modules_article_article_.article.md#optional-shouldcomponentupdate)
+* [updateArticleState](_src_markups_modules_article_article_.article.md#updatearticlestate)
+
+## Constructors
+
+###  constructor
+
+\+ **new Article**(`props`: any): *[Article](_src_markups_modules_article_article_.article.md)*
+
+*Overrides [Tags](_src_markups_components_tags_tags_.tags.md).[constructor](_src_markups_components_tags_tags_.tags.md#constructor)*
+
+Defined in src/markups/modules/article/article.js:55
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`props` | any |
+
+**Returns:** *[Article](_src_markups_modules_article_article_.article.md)*
+
+## Properties
+
+###  articleContainerRef
+
+• **articleContainerRef**: *RefObject‹any›* = createRef()
+
+Defined in src/markups/modules/article/article.js:47
+
+___
+
+###  articleContentRef
+
+• **articleContentRef**: *RefObject‹any›* = createRef()
+
+Defined in src/markups/modules/article/article.js:45
+
+___
+
+###  articleRef
+
+• **articleRef**: *RefObject‹any›* = createRef()
+
+Defined in src/markups/modules/article/article.js:49
+
+___
+
+###  articlesData
+
+• **articlesData**: *[articlesData](_src_markups_modules_article_article_.article.md#articlesdata)*
+
+Defined in src/markups/modules/article/article.js:53
+
+___
+
+###  context
+
+• **context**: *any*
+
+*Inherited from [Tags](_src_markups_components_tags_tags_.tags.md).[context](_src_markups_components_tags_tags_.tags.md#context)*
+
+Defined in node_modules/@types/react/index.d.ts:476
+
+If using the new style context, re-declare this in your class to be the
+`React.ContextType` of your `static contextType`.
+Should be used with type annotation or static contextType.
+
+```ts
+static contextType = MyContext
+// For TS pre-3.7:
+context!: React.ContextType<typeof MyContext>
+// For TS 3.7 and above:
+declare context: React.ContextType<typeof MyContext>
+```
+
+**`see`** https://reactjs.org/docs/context.html
+
+___
+
+###  currentArticleData
+
+• **currentArticleData**: *[currentArticleData](_src_markups_modules_article_article_.article.md#currentarticledata)*
+
+Defined in src/markups/modules/article/article.js:55
+
+___
+
+### `Readonly` props
+
+• **props**: *Readonly‹object› & Readonly‹object›*
+
+*Inherited from [Tags](_src_markups_components_tags_tags_.tags.md).[props](_src_markups_components_tags_tags_.tags.md#readonly-props)*
+
+Defined in node_modules/@types/react/index.d.ts:501
+
+___
+
+###  refs
+
+• **refs**: *object*
+
+*Inherited from [Tags](_src_markups_components_tags_tags_.tags.md).[refs](_src_markups_components_tags_tags_.tags.md#refs)*
+
+Defined in node_modules/@types/react/index.d.ts:507
+
+**`deprecated`** 
+https://reactjs.org/docs/refs-and-the-dom.html#legacy-api-string-refs
+
+#### Type declaration:
+
+* \[ **key**: *string*\]: ReactInstance
+
+___
+
+###  rightRailContainerRef
+
+• **rightRailContainerRef**: *RefObject‹any›* = createRef()
+
+Defined in src/markups/modules/article/article.js:51
+
+___
+
+###  state
+
+• **state**: *Readonly‹object›*
+
+*Inherited from [Tags](_src_markups_components_tags_tags_.tags.md).[state](_src_markups_components_tags_tags_.tags.md#state)*
+
+Defined in node_modules/@types/react/index.d.ts:502
+
+___
+
+###  stateUrl
+
+• **stateUrl**: *string* = ""
+
+Defined in src/markups/modules/article/article.js:43
+
+___
+
+### `Static` `Optional` contextType
+
+▪ **contextType**? : *Context‹any›*
+
+*Inherited from [Tags](_src_markups_components_tags_tags_.tags.md).[contextType](_src_markups_components_tags_tags_.tags.md#static-optional-contexttype)*
+
+Defined in node_modules/@types/react/index.d.ts:458
+
+If set, `this.context` will be set at runtime to the current value of the given Context.
+
+Usage:
+
+```ts
+type MyContext = number
+const Ctx = React.createContext<MyContext>(0)
+
+class Foo extends React.Component {
+  static contextType = Ctx
+  context!: React.ContextType<typeof Ctx>
+  render () {
+    return <>My context's value: {this.context}</>;
+  }
+}
+```
+
+**`see`** https://reactjs.org/docs/context.html#classcontexttype
+
+## Accessors
+
+###  initialArticleProps
+
+• **get initialArticleProps**(): *object*
+
+Defined in src/markups/modules/article/article.js:92
+
+**Returns:** *object*
+
+* **pageType**: *any* = getPageData('data.data.pageType')
+
+* **title**: *any* = getPageData('data.data.title')
+
+* **url**: *string* = urlJoin(
+                window.origin.includes('localhost')
+                    ? `${window.origin}/`
+                    : this.store.basePageUrl,
+                window.location.pathname,
+                window.location.hash,
+                window.location.search
+            )
+
+## Methods
+
+### `Optional` UNSAFE_componentWillMount
+
+▸ **UNSAFE_componentWillMount**(): *void*
+
+*Inherited from [Tags](_src_markups_components_tags_tags_.tags.md).[UNSAFE_componentWillMount](_src_markups_components_tags_tags_.tags.md#optional-unsafe_componentwillmount)*
+
+Defined in node_modules/@types/react/index.d.ts:712
+
+Called immediately before mounting occurs, and before `Component#render`.
+Avoid introducing any side-effects or subscriptions in this method.
+
+This method will not stop working in React 17.
+
+Note: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps
+prevents this from being invoked.
+
+**`deprecated`** 16.3, use componentDidMount or the constructor instead
+
+**`see`** https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#initializing-state
+
+**`see`** https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path
+
+**Returns:** *void*
+
+___
+
+### `Optional` UNSAFE_componentWillReceiveProps
+
+▸ **UNSAFE_componentWillReceiveProps**(`nextProps`: Readonly‹object›, `nextContext`: any): *void*
+
+*Inherited from [Tags](_src_markups_components_tags_tags_.tags.md).[UNSAFE_componentWillReceiveProps](_src_markups_components_tags_tags_.tags.md#optional-unsafe_componentwillreceiveprops)*
+
+Defined in node_modules/@types/react/index.d.ts:744
+
+Called when the component may be receiving new props.
+React may call this even if props have not changed, so be sure to compare new and existing
+props if you only want to handle changes.
+
+Calling `Component#setState` generally does not trigger this method.
+
+This method will not stop working in React 17.
+
+Note: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps
+prevents this from being invoked.
+
+**`deprecated`** 16.3, use static getDerivedStateFromProps instead
+
+**`see`** https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#updating-state-based-on-props
+
+**`see`** https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`nextProps` | Readonly‹object› |
+`nextContext` | any |
+
+**Returns:** *void*
+
+___
+
+### `Optional` UNSAFE_componentWillUpdate
+
+▸ **UNSAFE_componentWillUpdate**(`nextProps`: Readonly‹object›, `nextState`: Readonly‹object›, `nextContext`: any): *void*
+
+*Inherited from [Tags](_src_markups_components_tags_tags_.tags.md).[UNSAFE_componentWillUpdate](_src_markups_components_tags_tags_.tags.md#optional-unsafe_componentwillupdate)*
+
+Defined in node_modules/@types/react/index.d.ts:772
+
+Called immediately before rendering when new props or state is received. Not called for the initial render.
+
+Note: You cannot call `Component#setState` here.
+
+This method will not stop working in React 17.
+
+Note: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps
+prevents this from being invoked.
+
+**`deprecated`** 16.3, use getSnapshotBeforeUpdate instead
+
+**`see`** https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#reading-dom-properties-before-an-update
+
+**`see`** https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`nextProps` | Readonly‹object› |
+`nextState` | Readonly‹object› |
+`nextContext` | any |
+
+**Returns:** *void*
+
+___
+
+### `Optional` componentDidCatch
+
+▸ **componentDidCatch**(`error`: [Error](_src_markups_modules_error_error_.error.md), `errorInfo`: ErrorInfo): *void*
+
+*Inherited from [Tags](_src_markups_components_tags_tags_.tags.md).[componentDidCatch](_src_markups_components_tags_tags_.tags.md#optional-componentdidcatch)*
+
+Defined in node_modules/@types/react/index.d.ts:641
+
+Catches exceptions generated in descendant components. Unhandled exceptions will cause
+the entire component tree to unmount.
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`error` | [Error](_src_markups_modules_error_error_.error.md) |
+`errorInfo` | ErrorInfo |
+
+**Returns:** *void*
+
+___
+
+###  componentDidMount
+
+▸ **componentDidMount**(): *void*
+
+*Overrides [Tags](_src_markups_components_tags_tags_.tags.md).[componentDidMount](_src_markups_components_tags_tags_.tags.md#optional-componentdidmount)*
+
+Defined in src/markups/modules/article/article.js:64
+
+**Returns:** *void*
+
+___
+
+###  componentDidUpdate
+
+▸ **componentDidUpdate**(): *Promise‹void›*
+
+*Overrides [Tags](_src_markups_components_tags_tags_.tags.md).[componentDidUpdate](_src_markups_components_tags_tags_.tags.md#optional-componentdidupdate)*
+
+Defined in src/markups/modules/article/article.js:159
+
+**Returns:** *Promise‹void›*
+
+___
+
+### `Optional` componentWillMount
+
+▸ **componentWillMount**(): *void*
+
+*Inherited from [Tags](_src_markups_components_tags_tags_.tags.md).[componentWillMount](_src_markups_components_tags_tags_.tags.md#optional-componentwillmount)*
+
+Defined in node_modules/@types/react/index.d.ts:698
+
+Called immediately before mounting occurs, and before `Component#render`.
+Avoid introducing any side-effects or subscriptions in this method.
+
+Note: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps
+prevents this from being invoked.
+
+**`deprecated`** 16.3, use componentDidMount or the constructor instead; will stop working in React 17
+
+**`see`** https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#initializing-state
+
+**`see`** https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path
+
+**Returns:** *void*
+
+___
+
+### `Optional` componentWillReceiveProps
+
+▸ **componentWillReceiveProps**(`nextProps`: Readonly‹object›, `nextContext`: any): *void*
+
+*Inherited from [Tags](_src_markups_components_tags_tags_.tags.md).[componentWillReceiveProps](_src_markups_components_tags_tags_.tags.md#optional-componentwillreceiveprops)*
+
+Defined in node_modules/@types/react/index.d.ts:727
+
+Called when the component may be receiving new props.
+React may call this even if props have not changed, so be sure to compare new and existing
+props if you only want to handle changes.
+
+Calling `Component#setState` generally does not trigger this method.
+
+Note: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps
+prevents this from being invoked.
+
+**`deprecated`** 16.3, use static getDerivedStateFromProps instead; will stop working in React 17
+
+**`see`** https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#updating-state-based-on-props
+
+**`see`** https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`nextProps` | Readonly‹object› |
+`nextContext` | any |
+
+**Returns:** *void*
+
+___
+
+###  componentWillUnmount
+
+▸ **componentWillUnmount**(): *void*
+
+*Overrides [Tags](_src_markups_components_tags_tags_.tags.md).[componentWillUnmount](_src_markups_components_tags_tags_.tags.md#optional-componentwillunmount)*
+
+Defined in src/markups/modules/article/article.js:85
+
+**Returns:** *void*
+
+___
+
+### `Optional` componentWillUpdate
+
+▸ **componentWillUpdate**(`nextProps`: Readonly‹object›, `nextState`: Readonly‹object›, `nextContext`: any): *void*
+
+*Inherited from [Tags](_src_markups_components_tags_tags_.tags.md).[componentWillUpdate](_src_markups_components_tags_tags_.tags.md#optional-componentwillupdate)*
+
+Defined in node_modules/@types/react/index.d.ts:757
+
+Called immediately before rendering when new props or state is received. Not called for the initial render.
+
+Note: You cannot call `Component#setState` here.
+
+Note: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps
+prevents this from being invoked.
+
+**`deprecated`** 16.3, use getSnapshotBeforeUpdate instead; will stop working in React 17
+
+**`see`** https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#reading-dom-properties-before-an-update
+
+**`see`** https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`nextProps` | Readonly‹object› |
+`nextState` | Readonly‹object› |
+`nextContext` | any |
+
+**Returns:** *void*
+
+___
+
+###  forceUpdate
+
+▸ **forceUpdate**(`callback?`: function): *void*
+
+*Inherited from [Tags](_src_markups_components_tags_tags_.tags.md).[forceUpdate](_src_markups_components_tags_tags_.tags.md#forceupdate)*
+
+Defined in node_modules/@types/react/index.d.ts:493
+
+**Parameters:**
+
+▪`Optional`  **callback**: *function*
+
+▸ (): *void*
+
+**Returns:** *void*
+
+___
+
+### `Optional` getSnapshotBeforeUpdate
+
+▸ **getSnapshotBeforeUpdate**(`prevProps`: Readonly‹object›, `prevState`: Readonly‹object›): *any | null*
+
+*Inherited from [Tags](_src_markups_components_tags_tags_.tags.md).[getSnapshotBeforeUpdate](_src_markups_components_tags_tags_.tags.md#optional-getsnapshotbeforeupdate)*
+
+Defined in node_modules/@types/react/index.d.ts:677
+
+Runs before React applies the result of `render` to the document, and
+returns an object to be given to componentDidUpdate. Useful for saving
+things such as scroll position before `render` causes changes to it.
+
+Note: the presence of getSnapshotBeforeUpdate prevents any of the deprecated
+lifecycle events from running.
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`prevProps` | Readonly‹object› |
+`prevState` | Readonly‹object› |
+
+**Returns:** *any | null*
+
+___
+
+###  onWindowScroll
+
+▸ **onWindowScroll**(): *void*
+
+Defined in src/markups/modules/article/article.js:120
+
+**Returns:** *void*
+
+___
+
+###  render
+
+▸ **render**(): *Element‹›*
+
+*Overrides void*
+
+Defined in src/markups/modules/article/article.js:213
+
+**Returns:** *Element‹›*
+
+___
+
+###  renderArticleBottom
+
+▸ **renderArticleBottom**(): *Element‹›*
+
+Defined in src/markups/modules/article/article.js:308
+
+**Returns:** *Element‹›*
+
+___
+
+###  renderArticleHeadline
+
+▸ **renderArticleHeadline**(): *Element‹›*
+
+Defined in src/markups/modules/article/article.js:257
+
+**Returns:** *Element‹›*
+
+___
+
+###  renderArticleRightRail
+
+▸ **renderArticleRightRail**(): *Element‹›*
+
+Defined in src/markups/modules/article/article.js:298
+
+**Returns:** *Element‹›*
+
+___
+
+###  renderArticleTags
+
+▸ **renderArticleTags**(): *Element‹›*
+
+Defined in src/markups/modules/article/article.js:294
+
+**Returns:** *Element‹›*
+
+___
+
+###  renderBottom
+
+▸ **renderBottom**(): *Element‹›*
+
+Defined in src/markups/modules/article/article.js:192
+
+**Returns:** *Element‹›*
+
+___
+
+###  renderRightRail
+
+▸ **renderRightRail**(): *Element‹›*
+
+Defined in src/markups/modules/article/article.js:234
+
+**Returns:** *Element‹›*
+
+___
+
+###  setArticlesData
+
+▸ **setArticlesData**(`node`: any, `data`: any): *void*
+
+Defined in src/markups/modules/article/article.js:115
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`node` | any |
+`data` | any |
+
+**Returns:** *void*
+
+___
+
+###  setState
+
+▸ **setState**‹**K**›(`state`: function | Pick‹object, K› | object | null, `callback?`: function): *void*
+
+*Inherited from [Tags](_src_markups_components_tags_tags_.tags.md).[setState](_src_markups_components_tags_tags_.tags.md#setstate)*
+
+Defined in node_modules/@types/react/index.d.ts:488
+
+**Type parameters:**
+
+▪ **K**: *keyof object*
+
+**Parameters:**
+
+▪ **state**: *function | Pick‹object, K› | object | null*
+
+▪`Optional`  **callback**: *function*
+
+▸ (): *void*
+
+**Returns:** *void*
+
+___
+
+### `Optional` shouldComponentUpdate
+
+▸ **shouldComponentUpdate**(`nextProps`: Readonly‹object›, `nextState`: Readonly‹object›, `nextContext`: any): *boolean*
+
+*Inherited from [Tags](_src_markups_components_tags_tags_.tags.md).[shouldComponentUpdate](_src_markups_components_tags_tags_.tags.md#optional-shouldcomponentupdate)*
+
+Defined in node_modules/@types/react/index.d.ts:631
+
+Called to determine whether the change in props and state should trigger a re-render.
+
+`Component` always returns true.
+`PureComponent` implements a shallow comparison on props and state and returns true if any
+props or states have changed.
+
+If false is returned, `Component#render`, `componentWillUpdate`
+and `componentDidUpdate` will not be called.
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`nextProps` | Readonly‹object› |
+`nextState` | Readonly‹object› |
+`nextContext` | any |
+
+**Returns:** *boolean*
+
+___
+
+###  updateArticleState
+
+▸ **updateArticleState**(`__namedParameters`: object): *void*
+
+Defined in src/markups/modules/article/article.js:107
+
+**Parameters:**
+
+▪ **__namedParameters**: *object*
+
+Name | Type |
+------ | ------ |
+`pageType` | any |
+`title` | any |
+`url` | any |
+
+**Returns:** *void*
